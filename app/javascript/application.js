@@ -1,11 +1,14 @@
+import "@hotwired/turbo-rails"
+import "./controllers"
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-function App() {
-  return (<h1>Hello World!</h1>);
-}
+import {BrowserRouter} from "react-router-dom";
+import App from './App';
 
 ReactDOM.render(
-  <App/>,
+  <BrowserRouter>
+  <App/>
+  </BrowserRouter>,
   document.getElementById('root'),
 );
