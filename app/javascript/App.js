@@ -1,8 +1,14 @@
 import React from "react";
 import {Link, Route, Routes} from "react-router-dom";
+import Greeting from "./component/Greeting";
 
-function App() {
-    return (<h1>Hello! My Rails-React Application</h1>);
-  }
+const App = () => {
+  return <>
+    <h1>This is my first Rails React App</h1>
+    <Routes>
+      <Route path="/" element={<Greeting />}/>
+    </Routes>
+  </>
+}
 
 export default App;
